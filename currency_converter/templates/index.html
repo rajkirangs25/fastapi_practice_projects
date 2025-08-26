@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles.css?v=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../static/styles.css" />
+
     <title>Currency Converter Application</title>
   </head>
   <body>
@@ -29,14 +30,26 @@
           aria-label="Text input with dropdown button"
         />
         <button
-          class="currency_btn btn btn-outline-secondary dropdown-toggle"
+          class="from_currency_btn btn btn-outline-secondary dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          Currency
+          From Currency
         </button>
-        <ul class="currency_dropdown dropdown-menu dropdown-menu-end w-25"></ul>
+        <ul
+          class="from_currency_dropdown dropdown-menu dropdown-menu-end overflow-auto"
+        ></ul>
+
+        <button
+          class="to_currency_btn btn btn-outline-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          To Currency
+        </button>
+        <ul class="to_currency_dropdown dropdown-menu dropdown-menu-end"></ul>
       </div>
 
       <button type="submit" class="convert_btn shadow-xl">Convert</button>
