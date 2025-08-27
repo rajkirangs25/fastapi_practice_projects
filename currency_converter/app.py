@@ -39,4 +39,6 @@ def convert_currency(base: str, target: str):
     url = f"{BASE_URL}/{base.lower()}.json"
     response = fetch_with_retry(url)
     rate = response.get(base.lower(), {}).get(target.lower())
+    if rate is None:
+        return {"error": f"Conversion rate for {target.upper()} not found."}
     return {"base": base.upper(), "target": target.upper(), "rate": rate}
