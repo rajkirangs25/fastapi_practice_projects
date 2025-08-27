@@ -3,26 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/styles.css?v=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="/static/styles.css" />
     <title>Currency Converter Application</title>
   </head>
   <body>
-    <div class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-column align-items-center mt-5">
       <h1 class="currency_heading">Currency Converter Application</h1>
-      <!-- <input
-        type="text"
-        name="ip_currency"
-        class="ip_currency shadow-xl"
-        placeholder="Enter Currency in USD"
-      /> -->
-
       <div class="input-group mb-3 w-50">
         <input
           type="text"
@@ -35,7 +27,7 @@
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          From Currency
+          From
         </button>
         <ul
           class="from_currency_dropdown dropdown-menu dropdown-menu-end overflow-auto"
@@ -47,7 +39,7 @@
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          To Currency
+          To
         </button>
         <ul class="to_currency_dropdown dropdown-menu dropdown-menu-end"></ul>
       </div>
@@ -56,11 +48,11 @@
       <h1 class="op_currency shadow-xl"></h1>
     </div>
 
-    <script src="../static/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="/static/scripts.js" defer></script>
   </body>
 </html>

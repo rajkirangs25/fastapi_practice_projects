@@ -1,4 +1,5 @@
-.from_currency_dropdown .to_currency_dropdown {
+.from_currency_dropdown,
+.to_currency_dropdown {
   max-height: 200px;
   overflow-y: auto;
 }
